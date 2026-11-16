@@ -160,7 +160,7 @@
           <i data-lucide="message-circle" class="w-4 h-4 text-brand-neon"></i>
           <span>WA Admin</span>
         </a>
-        <a href="https://jelatix.com/event/riauforflores" target="_blank" onclick="trackRegisterClick()" class="relative group inline-flex items-center justify-center px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl font-sport font-bold text-xs sm:text-sm text-brand-dark bg-gradient-to-r from-brand-neon to-brand-accent shadow-glow-sm hover:shadow-glow-md transform active:scale-95 transition-all">
+        <a href="https://jelatix.com/event/riauforflores" target="_blank" class="relative group inline-flex items-center justify-center px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl font-sport font-bold text-xs sm:text-sm text-brand-dark bg-gradient-to-r from-brand-neon to-brand-accent shadow-glow-sm hover:shadow-glow-md transform active:scale-95 transition-all">
           <span>DAFTAR</span>
           <i data-lucide="arrow-right" class="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
         </a>
@@ -295,7 +295,7 @@
 
             <!-- CTA Actions -->
             <div class="pt-2 flex flex-col sm:flex-row gap-3">
-              <a href="https://jelatix.com/event/riauforflores" target="_blank" onclick="trackRegisterClick()" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-sport font-bold text-sm md:text-base text-brand-dark bg-gradient-to-r from-brand-neon via-brand-accent to-emerald-400 shadow-glow-md hover:shadow-glow-lg hover:brightness-110 active:scale-95 transition-all text-center">
+              <a href="https://jelatix.com/event/riauforflores" target="_blank" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-sport font-bold text-sm md:text-base text-brand-dark bg-gradient-to-r from-brand-neon via-brand-accent to-emerald-400 shadow-glow-md hover:shadow-glow-lg hover:brightness-110 active:scale-95 transition-all text-center">
                 <i data-lucide="ticket" class="w-5 h-5"></i>
                 <span>AMBIL TIKET SEKARANG</span>
               </a>
@@ -637,7 +637,7 @@
             </div>
 
             <div class="pt-2">
-              <a href="https://jelatix.com/event/riauforflores" target="_blank" onclick="trackRegisterClick()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-sport font-black text-sm text-brand-dark bg-gradient-to-r from-brand-neon to-brand-accent shadow-glow-md hover:shadow-glow-lg active:scale-95 transition-all text-center">
+              <a href="https://jelatix.com/event/riauforflores" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-sport font-black text-sm text-brand-dark bg-gradient-to-r from-brand-neon to-brand-accent shadow-glow-md hover:shadow-glow-lg active:scale-95 transition-all text-center">
                 <i data-lucide="ticket" class="w-4 h-4"></i>
                 <span>DAFTAR & PILIH JERSEYMU DI JELATIX</span>
               </a>
@@ -985,7 +985,7 @@
         </p>
 
         <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://jelatix.com/event/riauforflores" target="_blank" onclick="trackRegisterClick()" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-sport font-black text-base text-brand-dark bg-gradient-to-r from-brand-neon via-brand-accent to-emerald-400 shadow-glow-md hover:shadow-glow-lg hover:brightness-110 active:scale-95 transition-all">
+          <a href="https://jelatix.com/event/riauforflores" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-sport font-black text-base text-brand-dark bg-gradient-to-r from-brand-neon via-brand-accent to-emerald-400 shadow-glow-md hover:shadow-glow-lg hover:brightness-110 active:scale-95 transition-all">
             <i data-lucide="shopping-cart" class="w-5 h-5"></i>
             <span>DAFTAR EVENT SEKARANG (RP 200.000)</span>
           </a>
@@ -1053,7 +1053,7 @@
       <a href="https://wa.me/628115444405" target="_blank" class="p-2.5 rounded-xl bg-brand-surface border border-brand-border text-brand-neon">
         <i data-lucide="message-circle" class="w-5 h-5"></i>
       </a>
-      <a href="https://jelatix.com/event/riauforflores" target="_blank" onclick="trackRegisterClick()" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-neon to-brand-accent text-brand-dark font-sport font-bold text-xs uppercase tracking-wider shadow-glow-sm">
+      <a href="https://jelatix.com/event/riauforflores" target="_blank" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-neon to-brand-accent text-brand-dark font-sport font-bold text-xs uppercase tracking-wider shadow-glow-sm">
         Daftar Sekarang
       </a>
     </div>
@@ -1166,19 +1166,6 @@
       } else {
         content.classList.add('hidden');
         icon.classList.remove('rotate-180');
-      }
-    }
-
-    // Meta Pixel Outbound Click Tracker
-    function trackRegisterClick() {
-      if (typeof fbq === 'function') {
-        fbq('track', 'InitiateCheckout', {
-          content_name: 'Pekanbaru Mini Offline Charity Run For Flores 2026',
-          content_category: 'Event Ticket 5K Fun Run',
-          content_ids: ['riauforflores-5k'],
-          value: 200000,
-          currency: 'IDR'
-        });
       }
     }
   </script>
