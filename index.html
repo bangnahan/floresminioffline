@@ -278,25 +278,28 @@
 
         </div>
 
-        <!-- Right Column: Cinematic Hero Visual Card -->
-        <div class="lg:col-span-5 relative">
+        <!-- Right Column: Hero Visual Card with Dedicated Info Bar Below -->
+        <div class="lg:col-span-5 relative space-y-3">
+          <!-- Unobstructed Image Card -->
           <div class="relative mx-auto max-w-md rounded-3xl overflow-hidden gradient-border shadow-2xl p-2 bg-brand-surface group">
-            <img src="images/hero-visual.jpg" alt="Pekanbaru Charity Run For Flores Runners" class="w-full h-auto rounded-2xl object-cover transform group-hover:scale-[1.03] transition-transform duration-700">
-            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/15 to-transparent pointer-events-none rounded-2xl"></div>
-            
-            <!-- Floating Top Badge -->
-            <div class="absolute top-5 right-5 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-dark/85 backdrop-blur-md border border-brand-neon/40 text-brand-neon text-[11px] font-sport font-bold uppercase shadow-lg">
-              <i data-lucide="zap" class="w-3.5 h-3.5"></i>
-              <span>5K Fun Run</span>
-            </div>
+            <img src="images/hero-visual.jpg" alt="Pekanbaru Charity Run For Flores" class="w-full h-auto rounded-2xl object-cover transform group-hover:scale-[1.02] transition-transform duration-700">
+          </div>
 
-            <!-- Bottom Information Card -->
-            <div class="absolute bottom-5 left-5 right-5 text-white bg-black/75 backdrop-blur-md p-4 rounded-2xl border border-white/10 space-y-1">
-              <div class="flex items-center justify-between">
-                <span class="font-sport font-black text-xs sm:text-sm text-brand-neon tracking-wide">STADION UTAMA RIAU</span>
-                <span class="text-[11px] text-slate-300 font-bold">20 Des 2026</span>
+          <!-- Venue & Event Info Bar Below (Tidak Menutupi Gambar) -->
+          <div class="max-w-md mx-auto p-4 rounded-2xl bg-brand-surface border border-brand-border/80 flex items-center justify-between gap-4 shadow-lg">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-neon/15 border border-brand-neon/30 flex items-center justify-center text-brand-neon flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
               </div>
-              <p class="text-[11px] text-slate-300">Run. Donate. Inspire. Bersama Kita, Flores Bisa!</p>
+              <div>
+                <span class="font-sport font-black text-xs sm:text-sm text-white tracking-wide block">STADION UTAMA RIAU</span>
+                <span class="text-[11px] text-brand-mint font-medium">Minggu, 20 Desember 2026 • 06.30 WIB</span>
+              </div>
+            </div>
+            <div class="text-right flex-shrink-0">
+              <span class="text-[10px] uppercase font-sport font-bold px-2.5 py-1 rounded-full bg-brand-card border border-brand-neon/30 text-brand-neon block">
+                5K FUN RUN
+              </span>
             </div>
           </div>
         </div>
